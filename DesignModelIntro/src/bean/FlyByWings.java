@@ -9,6 +9,6 @@ package bean;
 public class FlyByWings implements FlyBehavior {
     @Override
     public void fly() {
-        System.out.println();
+        System.out.println("I fly by wings");
     }
 }
