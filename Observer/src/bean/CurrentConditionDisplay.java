@@ -18,6 +18,7 @@ public class CurrentConditionDisplay implements Display, Observer {
 
     public CurrentConditionDisplay(Subject subject) {
         this.subject = subject;
+        subject.addObserver(this);
     }
 
     @Override
