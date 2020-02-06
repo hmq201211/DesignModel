@@ -1,8 +1,8 @@
-package test;
+package version_1.test;
 
-import bean.BeijingPizzaStore;
-import bean.Pizza;
-import bean.ShanghaiPizzaStore;
+import version_1.bean.BeijingPizzaStore;
+import version_1.bean.Pizza;
+import version_1.bean.ShanghaiPizzaStore;
 
 /**
  * @ClassName: DesignModel->Test

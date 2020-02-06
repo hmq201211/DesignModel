@@ -1,4 +1,4 @@
-package bean;
+package version_2.bean;
 
 /**
  * @ClassName: DesignModel->PizzaStore

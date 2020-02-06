@@ -1,4 +1,4 @@
-package bean;
+package version_1.bean;
 
 /**
  * @ClassName: DesignModel->ShanghaiStyleCheesePizza

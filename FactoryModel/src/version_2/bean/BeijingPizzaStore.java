@@ -1,4 +1,4 @@
-package bean;
+package version_2.bean;
 
 /**
  * @ClassName: DesignModel->BeijingPizzaStore
@@ -10,8 +10,10 @@ public class BeijingPizzaStore extends PizzaStore {
     @Override
     protected Pizza createPizza(String type) {
         Pizza pizza = null;
-        if (type.equals("cheese"))
-            pizza = new BeijingStyleCheesePizza();
+        if (type.equals("cheese")) {
+            pizza = new BeijingStyleCheesePizza(new BeijingPizzaStoreIngredientMaker());
+            pizza.setName("BeijingStyleCheesePizza");
+        }
         return pizza;
     }
 }

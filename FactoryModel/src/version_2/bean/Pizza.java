@@ -1,6 +1,7 @@
-package bean;
+package version_2.bean;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @ClassName: DesignModel->Pizza
@@ -12,16 +13,9 @@ public abstract class Pizza {
     String name;
     String dough;
     String sauce;
-    ArrayList<String> toppings = new ArrayList<>();
+    List<String> toppings = new ArrayList<>();
 
-    void prepare() {
-        System.out.println("Preparing " + name);
-        System.out.println("Tossing dough...");
-        System.out.println("Adding sauce...");
-        System.out.println("Adding toppings...");
-        for (String string : toppings)
-            System.out.println("    Adding " + string);
-    }
+    abstract void prepare();
 
     void bake() {
         System.out.println("Bake for 25 minutes at 350 degree");
@@ -37,5 +31,18 @@ public abstract class Pizza {
 
     public String getName() {
         return name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Pizza{" +
+                "name='" + name + '\'' +
+                ", dough='" + dough + '\'' +
+                ", sauce='" + sauce + '\'' +
+                ", toppings=" + toppings +
+                '}';
     }
 }
